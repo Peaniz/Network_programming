@@ -1,0 +1,22 @@
+Mạng máy tính: tầng 1, 2, 3(Truyền số liệu, Mạng máy tính(IP, giao thức IP, định tuyến), 5 vấn đề của tầng thứ 3)
+NetID(trung tâm NIC cấp)
+HostID(trung tâm từ từng quốc gia cấp)
+ôn OSI(7) => TCP(4 tầng) => LTV(3 Tầng) => 3 lớp
+Dân lập trình viên sẽ bắt đầu lập trình từ tầng thứ 4(Tầng giao vần)
+Lập trình viên chỉ lập trình 3 tầng: tiếp cận mạng, ứng dụng, giao vần (3 lớp: lớp quản lí giao diện, quản lí database, lớp module xử lý)
++Lập trình đa luồng/đa tuyến(2 cách)(tránh việc thừa kế vội, người ta sử dụng runnable)
++Lập trình các luồng vào ra(InputStream/OutputStream Reader/Writer)
++Lập trình giao diện
++Lập trình kết nối CSDL 
+- Đọc tầng mạng(3)
++ Địa chỉ IP
++ Giao thức IP
++ Cấu trúc gói tin IP
++ Định tuyến
++ Phân chia mạng
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+LLC ở Data Link: bảo vệ data trong 1 frame: VRC, LRC, VRC - LRC, CRC  (bảo vệ chống sai lệch * đọc lại)
+NIC(Network Interface Card)
+ARQ(Automatic Repeat Request): Idle RQ & Continuous RQ 
+Baudot (Telex - 5bit = 1 kí hiệu)
+BCD (6 bit)
+ASCII ban đầu - 7 bit
+ASCII mở rộng - chuẩn - 8bit (0...255)
+
+Dữ liệu truyền dạng ASCII và truyền dạng binary
+EBCDIC: Extended binary code decimal interchange code (8 bit, không có bit kiểm tra)
+
+5 bit => 2^5 = 32 mã -> 30 mã (chữ và số) + 2 mã (check chữ hoặc số)
+
+ĐỌC GIAO THỨC CÁC TẦNG
+Application: HTTP, FTP, SMTP, NSF, Telnet, SSH, ECHO
+Presentation: SMB, NCP,...
+Session: SSH, NetBIOS, RPC
+Transport: TCP, UDP
+Network: IP, ICMP, RARP, ARP
+DataLink: Ethernet, TokenRing, ISDN
+Physical: 1000BASE-T, 100BASE-T 
+
+Mô hình truyền thông 3 tầng - 3 lớp:
+Lớp Presentation (Giao diện View)
+Lớp application Logic(Điều hướng xử lí - Controller)
+Lớp Data Management(Quản lí dữ liệu - MOdel : DAO, BO, BEAN)
+MVC

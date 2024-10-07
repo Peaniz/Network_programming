@@ -1,0 +1,60 @@
+1->ICMP
+6->TCP
+17->UDP
+Hoạt động xử lí của giao thức IP gồm 13 bước.
+Muốn tới nguồn hoặc đích thì phải tính Checksum: sai thì bỏ luôn
+*Đọc slide Cấu trúc gói tin IP
+
+Địa chỉ IP: (32 bit)
++ NetID: địa chỉ mạng
++ HostID: địa chỉ máy
+
+5 lớp: A: 1byte netid, 3byte hostid (mất 1 bit) 128 net (0-127) 2^24 host
+B: 2byte netid, 2byte hostid (mất 2 bit) 16384 net (128-191) 2^16 host
+C: 3byte netid, 1byte hostid (mất 3 bit) 2^21 net (192-223) 2^8 host
+D: 4byte netid (mất 4 bit) 256 mạng (224-239)
+E: 4byte netid (mất 4 bit) 256 mạng (240-255)
+
+Địa chỉ quảng bá (Broadcast Address):
++ Tất cả các bit phần HostID được đặt thành 1.
++ Được sử dụng để gửi thông tin đến tất cả các thiết bị trong mạng.
+123.5.9.15 (lớp A)
+Subnet Mask: 255.0.0.0
+NetID: 123.0.0.0
+Địa chỉ IP and Subnet Mask = NetID
+123.5.9.15 and 255.0.0.0 = 123.0.0.0
+Địa chỉ quảng bá: 123.255.255.255 
+
+2 IP khác NetID hoặc khác SubnetMask thì khác IP
+Địa chỉ loopback: 127.x.x.x
+Các lệnh CMD liên quan đến IP:
+Các ứng dụng không yêu cầu băng thông mạnh thì dùng UDP
+Các ứng dụng yêu cầu băng thông mạnh thì dùng TCP
+
+TCP:
+Bước 1: Thiết lập liên kết: Bắt tay 3 bước
+Bước 2: Truyền/nhận dữ liệu
+Bước 3: Ngắt liên kết
+
++Lập trình đa luồng/đa tuyến(2 cách)(tránh việc thừa kế vội, người ta sử dụng runnable):
+    +Tạo lớp từ lớp dẫn xuất Thread(): ghi đè run()
+    +Tạo lớp từ lớp dẫn xuất Runnable(): ghi đè run()
++Lập trình các luồng vào ra(InputStream/OutputStream(Luồng hướng Byte) Reader/Writer(Luồng hướng char))
++Lập trình giao diện
++Lập trình kết nối CSDL 
+
+Mô hình Client Server:
++ Chế độ bị phong tỏa (blocked):
+  - Server chờ đợi kết nối từ client
+  - Khi có kết nối, server xử lý yêu cầu của client
+  - Server không thể xử lý các yêu cầu khác cho đến khi hoàn thành yêu cầu hiện tại
++ Chế độ không bị phong tỏa (non-blocked):
+  - Server có thể xử lý nhiều kết nối cùng một lúc
+  - Sử dụng đa luồng hoặc các kỹ thuật xử lý đồng thời
+  - Hiệu quả hơn trong việc xử lý nhiều client cùng lúc
+
+  7 bước lập trình socket TCP/IP:
+
+
+Oon
+

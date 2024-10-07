@@ -1,0 +1,60 @@
+Chương 2: Các thiết bị và các chuẩn kết nối
+DTE: Data Terminal Equipment thiết bị đầu cuối xử lí dữ liệu
+DCE: Data Circuit Terminating Equipment thiết bị đầu cuối của mạch dữ liệu
+
+Đặc điểm cở bản của cáp xoắn đôi:
++ Chống được nhiễu xuyên âm
++ Cáp STP hạn chế được nhiễu từ bên ngoài
+Tốc độ bit khoảng 10Mbit/s với khoảng cách 100m và có thể tăng lên khi khoảng cách
+giảm xuống
+
+Với n thuê bao -> n*(n-1)/2 dây
+Cáp đồng trục: 
++ Không có nhiễu xuyên âm
++ Hạn chế được nhiễu từ bên ngoài
+Tốc độ bit có thể đạt tới 100Mbit/s
+
+Sợi quang:
+    Tốc độ dữ liệu > 2Gbps
+    Kích thước nhỏ, trọng lượng nhẹ
+    Suy giảm ít
+    Cách ly điện từ
+    Khoảng cách lặp lại lớn
+
+Viba mặt đất:
++ Không cho truy cập trực tiếp
+Vệ tinh:
++ Sử dụng sóng điện từ ở giả tần GHz để chuyển tiếp thông tin trên mặt đất
++ Chất lượng đường truyền không cao
++ Không sử dụng để truy nhập trực tiếp từ trên mạng
++ Thường sử dụng deer chuyển tiếp thông tin giữa các nút mạng
+
+Vận tốc quay vệ tình = vận tốc quay trái đất mới có thể truyền được dữ liệu
++ Lúc truyền của vệ tinh luôn luôn có delay
+
+Hệ thống vô tuyến tế bào
+
+GPRS (2G)
+Địa chỉ vật lí (MAC) -> gắn lên trạm 
+Các máy giao tiếp qua địa chỉ vật lí được gắn trên card NIC
+
+Bộ chuyển tiếp Repeater:
++ Không có xử lí tín hiệu, chỉ loại bỏ các tín hiệu méo, nhiễu
++ Khuyếch đại tín hiệu đã bị suy hao và khôi phục lại tín hiệu ban đầu
++ Repeater không thay đổi nội dung các tín hiệu đi qua nó
+
+2 mô hình mạng giống nhau dùng bridge vận chuyển
+2 mô hình mạng khác nhau dùng bridge biên dịch
+
+Router(tầng 3):
++ Một thiết bị hoạt động trên tầng mạng
++ nối nhiều mạng với nhau và cho phép các gói tin có thể đi theo nhiều đường khác nhau 
+để tới đích
+
+Modem:
+
+
+Gatewayko
+
+
+

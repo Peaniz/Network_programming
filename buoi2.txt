@@ -1,0 +1,46 @@
+Chương 1: Tổng quan về mạng máy tính
+Lập trình mạng:
+- Tạo ra các thực thể phần mềm hoạt động ở một tầng
+- Sử dụng các thực thể ở tầng phía dưới
+- Cung cấp dịch vụ cho các thực thể tầng trên
+- Chủ yếu tạo ra các thực thể phần mềm ở tầng ứng dụng, cung cấp dịch vụ cho người dùng
+Transport -> Application
+* Đối tượng lập trình mạng
+Các thực thể phần mềm thực thi giao thức trong hệ thống mạng.
+- được xây dựng dựa trên nền tảng hệ thống máy tính
+- phần cứng và hệ điều hành, kiến trúc phân tầng mạng
+
+2 dịch vụ chuyển mạch gói: Datagram và Mạch ảo(mạch ảo tạm thời, mạch ảo thường xuyên)
+
+Khi nói đến kiến trúc của mạng:
++ hình trạng mạng
++ giao thức mạng
+
+Phân loại mạng:
++ Phân loại theo khoảng cách địa lí: LAN, MAN, WAN, ...
++ Phân loại theo kiến trúc mạng sử dụng : 
+    Phân loại theo hình trạng mạng(Network topology) : mạng hình sao, tròn , tuyến tính
+    Phân loại theo giao thức mạng (Network protocol) : TCP/IP, mạng NETBIOS,..
+
+Khi lập trình web bán hàng thì cần phải có tầng session
+Khi kết xuất html thì hết phiên làm việc
+
+Lập trình theo không kết nối thì sẽ không có phiên
+Tùy vào từng ứng dụng mà mỗi nhà thiết kế mạng có thể gây mâu thuẫn hệ thống mạng. Vì vậy nên mới có chuẩn quốc tế OSI để
+tránh xảy ra xung đột.
+
+1.4 Chuẩn hóa mạng máy tính:
+*Ý nghĩa của các tầng OSI:
+*Các giao thức hoạt động ở các tầng
+
+7. Application: Network Process to Application. Tất cả dịch vụ ở tầng này
+6. Presentation: mã hóa thông tin theo 1 dạng khác, Biểu diễn dữ liệu. Đảm bảo dữ liệu có thể nhận ra tại hệ thống nhận
+5. Session: lưu vết 1 phiên làm việc giữa client với server, thiết lập điueef khiển và ngắt các phiên làm việc giữa các ứng dụng
+4. Transport: Đảm bảo kết nối đến đích, quan tâm đến việc truyền dẫn giữa các host
+3. Network: cung cấp và route IP, kết nối đối với 2 thiết bị
+2. Data Link: đảm bảo truyền dữ liệu tin cậy (VRC, LRC, CRC) 5 chức năng của tầng 2
+1. Physical: Truyền và nhận dữ liệu thô (bits)
+
+
+
+

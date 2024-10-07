@@ -1,0 +1,17 @@
+Truyền liên tục hàng loạt hay truyền từng lượt(stop and wait) thì phương pháp nào an toàn hơn
+Giới thiệu giao thức: Protocol là một bộ các qui ước ràng buộc về trao đổi thông ti. Khi cài đặt có thể là một driver hoặc một đoạn mã trong ROM
+Muốn chạy chương trình của mình thì cần không gian lưu trữ tạm thời, khi chương trình chạy thì máy tính lấy bộ nhớ từ RAM ra
+Vùng đệm lấy từ RAM để lưu trữ tạm thời
+Bộ nhớ ROM: quản lí, điều hành các chương trình trên máy tính có thông suốt với nhau hay không -> cũng là 1 giao thức trong ROM
+
+Chỉ có 2 kiểu liên kết của giao thức(2 kiểu liên lạc):
++ Không kết nối : Trong trường hợp ứng dụng cần đáp ứng nhanh, dữ liệu không quan trọng, băng thông không quyết định 
++ Có kết nối
+Client không được gửi trực tiếp lên server mà chỉ có thể gửi thông qua socket
+*Đọc lại java chương số 8
+Vẽ sơ đồ ARQ(Stop and Wait)
+
+Kiểu ẩn và kiểu hiện đều chung trường hợp số 1 và số 3(Nhận thành công, Mất báo nhận ACK)
+Kiểu ẩn: Chỉ quan tâm tới gói tin nhận AC
+Kiểu hiện: có quan tâm tới gói tin bị mất
+
